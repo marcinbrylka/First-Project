@@ -1,0 +1,615 @@
+* {
+    box-sizing: border-box;
+    font-family: "Raleway", Arial, sans-serif;
+}
+
+body {
+    min-width: 1080px;
+}
+
+.container {
+    width: 1056px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*=================================header===============================*/
+
+header {
+    width: 100%;
+    background: black;
+}
+
+.head {
+    position: relative;
+    color: white;
+}
+
+.head ul li {
+    display: block;
+    float: right;
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.head ul li a {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.head p {
+    float: left;
+    font-size: 14px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.head span {
+    color: #24BAA0;
+    font-weight: bold;
+}
+
+.head ul li:nth-of-type(2) {
+    padding: 0 51px;
+}
+
+.arrow {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 10px solid;
+    border-right: 10px solid;
+    border-bottom: 10px solid black;
+    margin: 0 auto;
+}
+
+.subMenu {
+    position: absolute;
+    display: none;
+    right: 195px;
+    padding-top: 3px;
+}
+
+.subMenu a {
+    display: block;
+    text-decoration: none;
+    padding: 0 15px;
+    background-color: black;
+    color: white;
+    text-transform: none;
+}
+
+
+.head .subMenu li {
+    float: none;
+    line-height: 30px;
+}
+
+.head .subMenu li:nth-of-type(2) {
+    padding: 0;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+}
+
+/*===========================slider=================================*/
+
+.slider {
+    background: rgba(250, 250, 250, 1);
+    background: -moz-linear-gradient(top, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 1) 51%, rgba(204, 204, 212, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(250, 250, 250, 1)), color-stop(51%, rgba(250, 250, 250, 1)), color-stop(100%, rgba(204, 204, 212, 1)));
+    background: -webkit-linear-gradient(top, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 1) 51%, rgba(204, 204, 212, 1) 100%);
+    background: -o-linear-gradient(top, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 1) 51%, rgba(204, 204, 212, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 1) 51%, rgba(204, 204, 212, 1) 100%);
+    background: linear-gradient(to bottom, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 1) 51%, rgba(204, 204, 212, 1) 100%);
+    height: 503px;
+}
+
+.slider .visible {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
+
+.sliderImgs li {
+    display: none;
+}
+
+.sliderImgs img {
+    margin-left: 0;
+    margin-top: 108px;
+}
+
+
+.smallChair {
+    width: 380px;
+    height: 280px;
+}
+
+.sliderContent {
+    text-align: center;
+    width: 374px;
+    height: 219px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 141px;
+}
+
+
+.sliderArrowLeft, .sliderImgs, .sliderContent {
+    float: left;
+}
+
+.sliderArrowLeft {
+    cursor: pointer;
+}
+
+.sliderArrowRight {
+    float: right;
+    cursor: pointer;
+}
+
+.sliderArrowLeft, .sliderArrowRight {
+    font-size: 78px;
+    margin: 205px 0;
+    color: #24BAA0;
+}
+
+.sliderContent h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.sliderContent h2 span {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #24BAA0;
+}
+
+.sliderContent p {
+    font-size: 14px;
+    margin: 30px 0;
+    color: #575757;
+}
+
+.sliderButton {
+    text-align: center;
+    height: 50px;
+    width: 264px;
+    font-size: 24px;
+    line-height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    background: #24BAA0;
+}
+
+.sliderButton a {
+    text-decoration: none;
+    color: white;
+}
+
+/*============================section gallery================================*/
+
+.gallery {
+    position: relative;
+    height: 350px;
+}
+
+.chair1 {
+    background-image: url("../images/box1_img.jpg");
+    background-size: cover;
+}
+
+.chair2 {
+    background-image: url("../images/box2_img.jpg");
+    background-size: cover;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.chair3 .chairName {
+    color: black;
+}
+
+.chair3 {
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    color: gray;
+}
+
+.chair1, .chair2, .chair3 {
+    position: relative;
+    float: left;
+    width: 335px;
+    height: 225px;
+    margin-top: 27px;
+}
+
+.backgroundChair {
+    position: absolute;
+    width: 100%;
+    height: 61px;
+    top: 150px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.chairName {
+    width: 140px;
+    border-bottom: 7px solid #24BAA0;
+}
+
+
+/*===============================section priceList===============================*/
+
+.priceList {
+    width: 100%;
+    height: 725px;
+    padding-top: 47px;
+    background: #f1f1f1;
+}
+
+.priceListElement {
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 334px;
+    height: 500px;
+    border: 2px solid #d6d5d5;
+    border-radius: 3px;
+    margin-top: 80px;
+    background: #f9f9f9;
+}
+
+.priceListElement:nth-of-type(2) {
+    border: 2px solid #24BAA0;
+    margin: 80px 26px 0 26px;
+    background: #24BAA0;
+}
+
+.priceListElementPrice {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    border-radius: 70px;
+    padding: 20px;
+    top: 80px;
+    left: calc(50% - 64px);
+    border: 1px solid #d6d5d5;
+    background: white;
+}
+
+.priceListElement:nth-of-type(2) .priceListElementPrice {
+    border: 1px solid #24BAA0;
+}
+
+.priceListElementPrice p:nth-of-type(1) {
+    position: relative;
+    font-size: 45px;
+    font-weight: bold;
+    top: 5px;
+    color: #bebdbd;
+}
+
+.priceListElement:nth-of-type(2) p:nth-of-type(1) {
+    color: #24BAA0;
+}
+
+.priceListElementPrice p:nth-of-type(1) sup {
+    position: relative;
+    font-size: 16px;
+    top: -27px;
+}
+
+.priceListElement:nth-of-type(2) p:nth-of-type(1) sup {
+    color: #24BAA0;
+}
+
+.priceListElementPrice p:nth-of-type(2) {
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    top: 9px;
+    text-transform: uppercase;
+    color: #bebdbd;
+}
+
+.priceListElement:nth-of-type(2) p:nth-of-type(2) {
+    color: #24BAA0;
+}
+
+.priceListElementDescription1, .priceListElementDescription3 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 42px;
+    font-size: 24px;
+    line-height: 42px;
+    background-color: #e4e4e4;
+    color: #a0a0a0;
+}
+
+.priceListElementDescription2, .priceListElementDescription4 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 42px;
+    font-size: 24px;
+    line-height: 42px;
+    color: #878787;
+    background-color: #f1f1f1;
+}
+
+.priceListElementDescription1 {
+    top: 243px;
+}
+
+.priceListElement:nth-of-type(2) .priceListElementDescription1, .priceListElement:nth-of-type(2) .priceListElementDescription3 {
+    background-color: white;
+}
+
+.priceListElementDescription2 {
+    top: 285px;
+}
+
+.priceListElementDescription3 {
+    top: 327px;
+}
+
+.priceListElementDescription4 {
+    top: 369px;
+}
+
+.priceListElementButton {
+    position: absolute;
+    width: 122px;
+    text-align: center;
+    height: 33.5px;
+    border-radius: 10px;
+    line-height: 33.5px;
+    left: calc(50% - 61px);
+    text-transform: uppercase;
+    bottom: 18px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #24BAA0;
+}
+
+.priceListElement:nth-of-type(2) .priceListElementButton {
+    background-color: white;
+}
+
+.priceListElementButton a {
+    text-decoration: none;
+    color: white;
+}
+
+.priceListElement:nth-of-type(2) .priceListElementButton a {
+    color: #24BAA0;
+}
+
+.priceListElement h2 {
+    text-align: center;
+    font-size: 23px;
+    text-transform: uppercase;
+    margin-top: 27px;
+    color: #24BAA0;
+}
+
+.priceListElement:nth-of-type(2) h2 {
+    color: white;
+}
+
+.circle {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 40px;
+    top: -40px;
+    left: calc(50% - 30px);
+    border: 2px solid #d6d5d5;
+    background-color: white;
+}
+
+.priceListElement:nth-of-type(2) .circle {
+    border: 2px solid #24BAA0;
+    background-color: #24BAA0;
+}
+
+.circle::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 40px;
+    top: calc(50% - 12.5px);
+    left: calc(50% - 12.5px);
+    background-color: #d6d5d5;
+}
+
+.priceListElement:nth-of-type(2) .circle::before {
+    background-color: #f1f1f1;
+}
+
+.priceListTitle, .formTitle, .choiceTitle, .summaryTitle {
+    width: 340px;
+    font-size: 22px;
+    text-transform: uppercase;
+    border-bottom: 7px solid #24BAA0;
+}
+
+/*section form*/
+
+.form {
+    width: 100%;
+    height: 555px;
+    padding-left: 12px;
+}
+
+.formTitle {
+    margin-top: 35px;
+    margin-bottom: 52px;
+}
+
+.contactForm {
+    float: left;
+    display: block;
+    width: 635px;
+}
+
+.contactForm input {
+    font-family: "Raleway", Arial, sans-serif;
+}
+
+.contactForm textarea {
+    font-family: "Raleway", Arial, sans-serif;
+}
+
+.contactForm2 {
+    float: right;
+    display: block;
+    font-size: 20px;
+    width: 343px;
+    margin-right: 20px;
+}
+
+.contactForm2 input {
+    float: left;
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.contactForm2 label {
+    position: relative;
+    display: block;
+    font-size: 19px;
+    padding-left: 65px;
+    margin: 15px 0 36px 0;
+    color: #cecece;
+}
+
+.contactForm2 label::before, .contactForm2 label::after {
+    position: absolute;
+    content: "";
+    display: block;
+    border: 1px solid #27c7ab;
+    height: 48px;
+    width: 48px;
+    top: 0;
+    left: 0;
+}
+
+.contactForm2 label::after {
+    background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;") no-repeat center;
+    border: 0;
+    display: none;
+}
+
+.contactForm2 input:checked + label::after {
+    display: block;
+}
+
+.form img {
+    float: right;
+    position: relative;
+    top: -15px;
+    right: 90px;
+    width: 245px;
+    height: 194px;
+}
+
+.contactForm textarea {
+    resize: none;
+    padding-top: 10px;
+    height: 189px;
+}
+
+.contactForm input, .contactForm textarea {
+    border: 1px solid #8de0d2;
+    padding-left: 20px;
+    font-size: 33px;
+    width: 635px;
+}
+
+.contactForm input {
+    height: 66px;
+}
+
+.contactButton {
+    float: right;
+    text-align: center;
+    width: 343px;
+    height: 70px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 70px;
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: #24BAA0;
+}
+
+.contactButton a {
+    text-decoration: none;
+    color: white;
+}
+
+/*===================================footer======================================*/
+
+footer {
+    margin-bottom: 50px;
+}
+
+footer p {
+    float: left;
+    font-size: 16px;
+    margin-left: 10px;
+    color: #939393;
+}
+
+footer p:nth-of-type(2) span {
+    font-weight: bolder;
+}
+
+footer p:nth-of-type(2) {
+    float: right;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #939393;
+}
+
+
+.socialMedia {
+    float: right;
+    font-size: 30px;
+    margin-right: 60px;
+    margin-top: -10px;
+}
+
+
+
+
+
